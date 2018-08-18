@@ -1,0 +1,111 @@
+	<!--发现·玩哪里-->
+		<view class="hot b_w mar_t_10 pad_b_5">
+			<!--标题--> 
+			<view class="tit row">
+				<view class="ts_15 txt_c1"><image class="tit_iocn" src="../imgs/img_36.png"/>发现·玩哪里</view>
+				<view class="txt_c3 ts_13">更多 ></view> 
+			</view>
+			
+			<!--秒杀、特惠-->
+			<view class="row mar_l_10 mar_r_10">
+				<view class="col2 hot_show">
+					<view class="rel txt_cw">
+						<image class="abs img24" src="../imgs/img_14-min.png"/>
+						<span class="abs ts_11 txt_cw mar_t_-2 mar_l_5">特惠</span>
+						<view class="abs rob_hs bot_0 one_lin">丽江-大理-香格里拉双...</view>
+						<image class="widths" src="../imgs/img_103.JPG"/>
+					</view>
+					<view class="widths h_35 row">
+						<view class="txt_c1 pad_l_5">
+							<span class="txt_14">￥</span><span class="txt_14">3098</span><span class="txt_14 c_txt">起</span>
+						</view>
+						<view><image class="img25 mar_r_10" src="../imgs/img_37.png"/></view>
+					</view>
+				</view>
+				<view class="col2 hot_show mar_l_10">
+					<view class="rel txt_cw">
+						<image class="abs img24" src="../imgs/img_14-min.png"/>
+						<span class="abs ts_11 txt_cw mar_t_-2 mar_l_5">特惠</span>
+						<view class="abs rob_hs bot_0 one_lin">丽江-大理-香格里拉双...</view>
+						<image class="widths" src="../imgs/img_103.JPG"/>
+					</view>
+					<view class="widths h_35 row">
+						<view class="txt_c1 pad_l_5">
+							<span class="txt_14">￥</span><span class="txt_14">3098</span><span class="txt_14 c_txt">起</span>
+						</view>
+						<view><image class="img25 mar_r_10" src="../imgs/img_37.png"/></view>
+					</view>
+				</view>
+			</view>
+			<!--标题模块-->
+			<view class="row mar_r_10">
+				<view class="col widths mar_l_10">
+					<view class="hot_txt1">泰国</view>
+					<view class="hot_txt1">澳大利亚</view>
+				</view>
+				<view class="col widths mar_l_10">
+					<view class="hot_txt1">日本</view>
+					<view class="hot_txt1">港澳</view>
+				</view>
+				<view class="col widths mar_l_10">
+					<view class="hot_txt1">厦门</view>
+					<view class="hot_txt1">欧洲</view>
+				</view>
+				<view class="col widths mar_l_10">
+					<view class="hot_txt1">七彩云南</view>
+					<view class="hot_txt1">贵州</view>
+				</view>
+			</view>		
+		</view>
+		
+		<!--国内推荐-->
+		<view class="mar_t_10">
+			<!--标题-->
+			<view class="tit row b_w">
+				<view class="ts_15 txt_c1"><image class="tit_iocn" src="../imgs/img_36.png"/>精选线路</view>
+				<view class="txt_c3 ts_13">更多 ></view> 
+			</view>
+			<!--列表-->
+			<view class="row3 mar_t_1 pad_b_10 b_w pad_t_10 h_105">
+				<image class="w_81 h_80 mar_l_13 mar_r_15 fshr" src="../imgs/img_103.JPG"/>
+				<view class="col3 pad_t_5 pad_b_5">
+					<span class="txt_14 c_txt1">武汉海昌极地海洋世界</span>
+					<view class="row_2 c_red1 padding_t_3">
+						<view class="ts_10">
+							<span class="iocn5">优惠</span>
+							<span class="iocn6">返现</span>
+							<span class="iocn7">今日可订</span>
+						</view>
+						
+					</view>
+					<view class="row widths ts_12 txt_c3">
+						<span>武汉 出发</span>
+						<view class="txt_11 txt_c1 pad_r_15">
+							￥<span class="ts_18">68</span> 起
+						</view>
+					</view>
+				</view>
+			</view>
+			<view class="row3 mar_t_1 pad_b_10 b_w pad_t_10 h_105">
+				<image class="w_81 h_80 mar_l_13 mar_r_15 fshr" src="../imgs/img_103.JPG"/>
+				<view class="col3 pad_t_5 pad_b_5">
+					<span class="txt_14 c_txt1">武汉海昌极地海洋世界</span>
+					<view class="row_2 c_red1 padding_t_3">
+						<view class="ts_10">
+							<span class="iocn5">优惠</span>
+							<span class="iocn6">返现</span>
+							<span class="iocn7">今日可订</span>
+						</view>
+						
+					</view>
+					<view class="row widths ts_12 txt_c3">
+						<span>武汉 出发</span>
+						<view class="txt_11 txt_c1 pad_r_15">
+							￥<span class="ts_18">68</span> 起
+						</view>
+					</view>
+				</view>
+			</view>
+			
+			
+		</view>

@@ -1,0 +1,26 @@
+.reds{background-color: red}
+
+.tit1{height: 70rpx; line-height: 35rpx; font-size: 30rpx; color: #474747; margin-top: 15rpx; margin-bottom: 5px; overflow: hidden;}
+.adds{width: 132rpx; height: 32rpx; background-color: black; opacity: 0.5; border-bottom-right-radius: 28rpx;}
+.ts_11{font-size: 22rpx; margin-right: 15rpx;}
+.ts_12{font-size: 24rpx; margin-left: 15rpx;}
+.ts_14{font-size: 28rpx; color: #474747;}
+.ts_15{font-size: 30rpx; color: #474747; }
+.ts_13{font-size: 26rpx;}
+.ts_18{font-size: 36rpx;}
+.h_88{height: 6.5vh; border-top: 1rpx solid #ebebeb; border-bottom: 1rpx solid #ebebeb;}
+.h_100{height: 93.1vh;}
+.wx_img1{width: 700rpx; height: 180rpx; margin: 25rpx;}
+.wx_img2{width: 340rpx; height: 230rpx;}
+.wx_img3{width: 34rpx; height: 30rpx;}
+.items{width: 340rpx; height: 400rpx;}
+.row_wrap{margin-left: 26rpx; margin-right: 26rpx;}
+.txt_action{line-height: 6.5vh; color: #ff7500; border-bottom: 6rpx solid #ff7500;}
+.inpt_back{width: 700rpx; height: 570rpx; margin: 25rpx; box-shadow: 2rpx 2rpx 12rpx #ccc;}
+.hr{width: 100%; height: 2rpx; background-color: #ebebeb; margin-bottom: 25rpx;}
+.hr1{width: 620rpx; height: 2rpx; background-color: #ebebeb; margin-top: 16rpx; margin-bottom: 5rpx;}
+.hr2{width: 20vw; height: 6rpx; background-color: #ff7403; border-radius: 3rpx;}
+.tit_txt{font-weight: 600; height: 88rpx;}
+.w_620{width: 620rpx; margin-top: 10rpx;}
+.fshr{margin-right: 60rpx; margin-top: -2rpx;}
+.but{width: 620rpx; height: 80rpx; background: linear-gradient(to left, #ff9900, #ff7403); border-radius: 40rpx; text-align: center; line-height: 80rpx; color: white; margin-top: 15rpx; margin-bottom: 15rpx;}

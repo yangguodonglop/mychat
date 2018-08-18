@@ -1,0 +1,74 @@
+<view id="app">
+  <view class="mui-content">
+    <view id="slider" class="mui-slider mui-fullscreen">
+      <view id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+        <view class="mui-scroll">
+          <a class="mui-control-item {{currentTabsIndex==index?'mui-active':''}}" wx:key="unique" bindtap="switchtab" wx:for="{{switchs}}" data-index="{{index}}">
+            {{item}}
+          </a>
+
+
+        </view>
+      </view>
+      <view class="mui-slider-group" id="nowclick" >
+        <view class="mui-slider-item mui-control-content mui-active">
+          <view id="scroll1" class="mui-scroll-wrapper">
+            <view class="mui-scroll">
+              <view class="my_order_new">
+                <ul class="mui-table-view">
+                  <li wx:for="{{dataList}}" wx:key="unique">
+                    <p class="item_p1">
+                      <span class="item_span1">订单编号：{{item.order_id}}</span>
+                      <span class="item_span2">{{item.pay_status}}</span>
+                    </p>
+                    <p class="item_p2">
+
+                      <span class="item_span1">
+                        <image src="{{item.thumb}}" />
+                      </span>
+                      <span class="item_span2">
+                        <i class="item_i1" style=" display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2; overflow: hidden;">{{item.title}}</i>
+                        <i class="item_i2">出行日期{{item.start_time}}</i>
+                        <i class="item_i3">总价:
+                          <b>{{item.price}}</b>
+                        </i>
+                      </span>
+                    </p>
+                    <p class="item_p3">
+													<a data-id="{{item.id}}"  bindtap='delete_order' class="delete_order {{isChecked?'is_checked':'normal'}}" href="javascript:void(0)">
+														取消订单
+													</a>
+													<a data-id="{{item.id}}" data-price="{{item.price}}" bindtap="operation" href="javascript:void(0)" class="zf_bth {{isChecked1?'is_checked':'normal'}}">
+														{{item.status}}
+													</a>
+												</p>
+                  </li>
+                  <li wx:for="{{dataList1}}" wx:key="unique">
+                    <p class="item_p1">
+                      <span class="item_span1">订单编号：{{item.order_id}}</span>
+                      <span class="item_span2">{{item.pay_status}}</span>
+                    </p>
+                    <p class="item_p2">
+
+                      <span class="item_span1">
+                        <image src="{{item.thumb}}" />
+                      </span>
+                      <span class="item_span2">
+                        <i class="item_i1" style=" display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 2; overflow: hidden;">{{item.title}}</i>
+                        <i class="item_i2">出行日期{{item.start_time}}</i>
+                        <i class="item_i3">总价:
+                          <b>{{item.price}}</b>
+                        </i>
+                      </span>
+                    </p>
+        
+                  </li>
+                </ul>
+              </view>
+            </view>
+          </view>
+        </view>      
+      </view>
+    </view>
+  </view>
+</view>

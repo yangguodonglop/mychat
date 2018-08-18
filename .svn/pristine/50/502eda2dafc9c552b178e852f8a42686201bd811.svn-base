@@ -1,0 +1,72 @@
+<view class="mui-content" style='position: relative;'>
+  <!--订单商品-->
+  <view class="b_w mar_t_1 row pad_l_15 pad_r_10 pad_t_10 pad_b_10">
+    <image class="img19 fshr" src="{{thumb}}"></image>
+    <view class="col4 mar_l_20 h_80" style="display: block;">
+      <span style="display: -webkit-box;-webkit-box-orient: vertical;-webkit-line-clamp: 3;  overflow: hidden;" class="ts_16 ts_w_600 txt_c2">{{title}}</span>
+      <span class="ts_12 txt_c4 txt_c4_active">{{price}}
+        <i>元</i>
+      </span>
+    </view>
+  </view>
+  <view class="b_w">
+    <view class="row ali mar_t_10 pad_t_3 pad_l_15 pad_r_15 pad_t_10">
+      <image class="w_25 mar_r_10" src="/images/img_39.png"></image>
+      <span class="ts_13 txt_c2" style="line-height: 15px;">此产品需二次确认，商家将在12个工作小时内（工作日9:00 - 18:00) 核实是否有位。</span>
+    </view>
+    <view class="row h_38 pad_l_15 pad_r_15 ts_14 txt_c2">
+      <span>选择日期</span>
+       <picker mode="date" value="{{date}}" bindchange="bindDateChange">
+    <view class="picker">
+    {{datetime}}
+    </view>
+  </picker>
+    </view>
+    <!--日期-->
+  
+    <view class="row h_38 pad_l_15 pad_r_15 ts_14 txt_c2">
+      <span>购买数量</span>
+      <view class="row w_81">
+        <a class="but1" bindtap="but_del">-</a>
+        <span class="but_txt">{{num}}</span>
+        <a class="but1" bindtap="but_add" >+</a>
+      </view>
+    </view>
+  </view>
+
+  <!--用户信息-->
+  <view class="b_w mar_t_10 txt_c2 ts_14 pad_t_15">
+    <span class="pad_l_15 ts_w_800">联系人信息</span>
+    <view class="br4 mar_t_10"></view>
+    <view class="h_44 b_w row pad_l_15 pad_r_15">
+      <span class="w_75 ts_w_600">姓名</span>
+      <input type="text" placeholder="出游人姓名" bindinput="getname" style="border: 0; flex-grow: 1; height: 40px; font-size: 14px;" />
+    </view>
+    <view class="br4"></view>
+    <view class="h_44 b_w row pad_l_15 pad_r_15">
+      <span class="w_75 ts_w_600">电话</span>
+      <input type="number" name="" id="" placeholder="您的电话号码" v-model='phone' style="border: 0; flex-grow: 1; height: 40px;  font-size: 14px;" bindinput="getphone" />
+    </view>
+    <view class="br4"></view>
+    <view class="h_80 b_w row1 pad_l_15 pad_r_15">
+      <span class="w_75 ts_w_600 pad_t_10">留言</span>
+      <textarea class="h_80 ts_14" type="text" v-model='contents' placeholder="填写内容" style="padding-top:12px; border: 0; flex-grow: 1;" bindinput="getcontents"></textarea>
+    </view>
+  </view>
+  <!--提交信息-->
+  <view class="fix_but1 row">
+    <span class="ts_12 txt_c2 mar_l_20">应付：
+      <span class="ts_20 txt_c1">¥{{price}}</span>
+    </span>
+    <span class="wid_42 but_bac1" bindtap="linkUrl">提交订单</span>
+  </view>
+  <!--阅读并同意-->
+  <view class="margin_10 padding_l_10 txt_12 c_txt1 login_hyxy" style="color: #474747; font-size: 12px; padding: 10px 10px 15px 15px;">
+    <span class="order_iocn1 {{isChecked?'is_checked':'normal'}} {{order_iocn1add?'is_checked':'is_checkedno'}}" bindtap="toggle">
+      <image class='imgsize' src="/images/img_78.png" wx:if="{{isshow==false}}"></image>
+      <image class='imgsize' src="/images/img_41.png" wx:if="{{isshow==true}}"></image>
+    </span>
+    <span class="c_txt2" style="color: #b8b8b8; font-size: 12px;">已阅读并同意</span>
+    <span>《欣旅天下预定条款》</span>
+  </view>
+</view>

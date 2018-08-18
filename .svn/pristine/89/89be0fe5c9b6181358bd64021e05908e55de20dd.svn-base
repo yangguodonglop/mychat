@@ -1,0 +1,68 @@
+@import '/assets/css/personal_set.wxss';
+@import '/assets/css/new_style.wxss';
+
+html, body {
+  background-color: #efeff4;
+}
+.ts_16 {
+font-size:16px
+}
+
+.ts_12{
+  font-size: 12px;
+} 
+.txt_c4_active {
+    color: #ff7403;
+    font-size: 17px;
+}
+.txt_c4_active i {
+    font-style: normal;
+    color: #999999;
+    font-size: 12px;
+}
+.w_25 {
+width:25px;
+height:25px;
+}
+
+Styles
+Dataset
+element.style {
+line-height
+:
+15px
+;
+}
+.ts_13 {
+font-size:13px;
+}
+.ts_14 {
+    font-size: 14px;
+}
+.but1 {
+  line-height: 27px;
+}
+.ts_20 {
+font-size:20px;
+
+}
+ .order_iocn1 {
+    width: 18px;
+    height: 18px;
+    float: left;
+    margin-right: 5px;
+} 
+.imgsize{
+   width: 18px;
+    height: 18px;
+}
+.picker{
+  border: 1px solid #999999;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+
+
+
+

@@ -1,0 +1,34 @@
+<import src="../../../wxParse/wxParse.wxml" />
+<view class="fix_but b_w">
+    <view class="txt_cw ts_16 but_bac mar_13" bindtap='makeOrder'>
+        立即兑换
+    </view>
+</view>
+<image class="wx_img1" mode="aspectFill" src="{{thumb}}" />
+<view class="col2 b_w pad_l_15 pad_r_15 pad_t_10" style='width: 700rpx;'>
+    <span class="txt_c1 ts_18">{{price}}
+        <span class="ts_12"> 积分</span>
+    </span>
+    <span class="ts_15 mar_t_10 pad_b_10 txt_c2">{{title}}</span>
+    <view class="row3 mar_b_10 pad_t_10 jf_tit_link1">
+        <image class="img12" src="/images/remind.png" />
+        <span class="mar_l_10 txt_c2">每月最后一天，不能进行该礼品兑换。</span>
+    </view>
+</view>
+<view class='marg'></view>
+<view class="b_w">
+    <image class="img13 mar_l_20 mar_t_10" src="/images/fwcn.png" />
+    <view class="mar_l_20 mar_r_10 ts_13 mar_b_10">
+        欣旅天下积分商城向您保证所兑换的商品均为正品，与您亲临商场选购的商品享受相同的质量、服务保障，请放心兑换；如您兑换环节遇到任何问题，请第一时间联系客服人员，我们会尽心为您处理问题。
+    </view>
+</view>
+<view class='marg'></view>
+<view class="b_w h_44 row4 ts_14">
+    <image class="img14" src="/images/spxq_l.png" />
+    <span class="mar_l_20 mar_r_20 wgt_600">商品详情</span>
+    <image class="img14" src="/images/spxq_r.png" />
+</view>
+<view v-html="good.contents" id="imgs"></view>
+<view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}" />
+</view>

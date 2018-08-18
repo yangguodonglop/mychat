@@ -1,0 +1,13 @@
+<view class='back'>
+    <view class='top'></view>
+    <view class='item row'>
+        <text class='ts_15'>姓名</text>
+        <input style='font-size: 28rpx;' type='text' placeholder='输入姓名' class='inp' bindinput='b_name'></input>
+    </view>
+    <view class='item row'>
+        <text class='ts_15'>电话</text>
+        <input style='font-size: 28rpx;' type='text' placeholder='输入电话号码' class='inp' bindinput='b_phone'></input>
+    </view>
+
+    <view class='but' bindtap='up_data'>确定</view>
+</view>

@@ -1,0 +1,9 @@
+.fix_but{border-top: 1rpx solid #ccc;}
+.wx_img1{width: 750rpx; height: 580rpx; border-bottom: 2rpx solid #f2f2f2;}
+.ts_18{font-size: 44rpx;}
+.ts_12{font-size: 24rpx;}
+.ts_15{font-size: 30rpx; font-weight: 600; color: #474747;}
+.jf_tit_link1>span{font-size: 26rpx; color: #474747;}
+.marg{width: 750rpx; height: 20rpx; background-color: #f2f2f2;}
+.ts_13{font-size: 26rpx;}
+.img14{height: 6rpx;}

@@ -1,0 +1,7 @@
+<view class='back'>
+    <view class='mar_top'></view>
+    <textarea class='inputs' bindinput='datas' placeholder='请留下您的宝贵建议...'></textarea>
+
+    <view class='but' bindtap='up_data'>提交</view>
+
+</view>

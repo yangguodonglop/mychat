@@ -1,0 +1,23 @@
+/* pages/search/search.wxss */
+.rads{background-color: rebeccapurple}
+
+.ts_18{font-size: 36rpx;}
+.ts_14{font-size: 28rpx;}
+.ts_12{font-size: 24rpx;}
+.ts_11{font-size: 22rpx;}
+.wx_iocn1{width: 14rpx; height: 10rpx; margin-left: 10rpx; margin-bottom: 5rpx;}
+.wx_iocn2{width: 40rpx; height: 40rpx;}
+.wx_iocn3{width: 160rpx; height: 160rpx;}
+.wx_iocn4{width: 30rpx; height: 30rpx;}
+.pad_20{padding-left: 40rpx; padding-right: 40rpx;}
+.pad_l_260{padding-left: 260rpx; line-height: 85rpx; padding-right: 50rpx;}
+.pad_l_0{animation: anim1 0.7s; animation-fill-mode: forwards;}
+.image22{width: 35rpx; height: 25rpx;}
+.image23{width: 0px; height: 0px;}
+.display_none{display: none;}
+.dele{height: 55rpx; width: 70rpx; text-align: center; line-height: 50rpx; color: #aaa; animation: anim3 1s}
+.wx_ss{border: 1rpx solid #eee; height: 54rpx; border-radius: 27rpx; padding-left: 25rpx; animation: anim2 0.7s; animation-fill-mode: forwards;}
+
+@keyframes anim1{from{padding-left: 260rpx; padding-right: 50rpx;} to{padding-left: 0rpx; padding-right: 0rpx;}}
+@keyframes anim2{from{width: 0rpx;} to{width: 480rpx;}}
+@keyframes anim3{from{transform: rotateZ(0deg)} to{transform: rotateZ(720deg)}}

@@ -1,0 +1,22 @@
+<view class='back'>
+    <view wx:if="{{cityArray == '' || cityArray.length == 0}}">
+        <image class='wx_img4' src='/images/img_null.png'></image>
+    </view>
+
+    <scroll-view wx:else scroll-y class='soll'>
+        <view wx:for="{{cityArray}}" wx:key="unique">
+            <view class='wx_tit'>{{item.letter}}</view>
+            <view class='wx_item row' wx:for="{{item.data}}" wx:key="unique">
+                <text>{{item.name}}</text>
+                <text>{{item.phone}}</text>
+            </view>
+            <!-- <view class='wx_item' wx:if="{{item.type == 'city'}}">{{item.city}}</view>
+            <view class='wx_tit' wx:else>{{item.type}}</view> -->
+        </view>
+    </scroll-view>
+    
+    <view class='but' bindtap='open_page'>
+        <view>新增联系人</view>
+    </view>
+
+</view>

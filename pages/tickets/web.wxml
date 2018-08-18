@@ -1,0 +1,2 @@
+<!--pages/tickets/web.wxml-->
+<web-view src="https://m.ly.com/scenery/?refid=10126681"></web-view>

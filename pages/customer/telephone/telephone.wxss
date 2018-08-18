@@ -1,0 +1,15 @@
+.back{background-color: #f5f5f5; height: 100vh;}
+.wx_tit{padding-left: 30rpx; height: 50rpx; color: #333; font-size: 35rpx; line-height: 50rpx;}
+.wx_item{padding-left: 20rpx; height: 80rpx; color: #474747; font-size: 25rpx; line-height: 80rpx; background-color: white; border-bottom: 1rpx solid #f5f5f5; padding-right: 80rpx;}
+.wx_img4{width: 398rpx; height: 338rpx; padding-left: 170rpx; padding-top: 200rpx;}
+
+.reds{background-color: rebeccapurple;}
+.heights{align-self: flex-start;}
+.col4{width: 60rpx; font-size: 30rpx; display: flex; flex-direction: column; justify-content: space-around; align-items: center; height: 86vh;}
+.pad_tb{padding-top: 15rpx; color: #555;}
+.abc_back{background-color: black; opacity: 0.1; position: absolute; width: 60rpx; height: 92vh;}
+.soll{height: 90vh;}
+.but{background: white; height: 10vh; position: absolute; bottom: 0; width: 750rpx; border-top: 2rpx solid #ccc;}
+.but>view{width: 700rpx; height: 8vh; background: linear-gradient(to left, #ff9900, #ff7403); margin-left: 25rpx; margin-top: 1vh; border-radius: 50rpx; color: white; text-align: center; line-height: 8vh; font-size: 32rpx;}
+.abs{width: 100rpx; height: 100rpx; top: 35%; left: 50%; margin-left: -50rpx; text-align: center; line-height: 100rpx; font-size: 100rpx;}
+

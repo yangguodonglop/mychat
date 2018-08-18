@@ -1,0 +1,59 @@
+<view id="app" class='me'>
+    <view class='marg'></view>
+    <!--地址信息-->
+    <view bindtap='checkaddress' class="content">
+        <view class="b_w mar_t_1 h_84 col3">
+            <view class="row3 h_80 widths">
+                <view class="col3 mar_t_10 txt_c2" >
+						<span class="ts_16 mar_l_10 mar_t_10">
+							<span wx-if="{{default_address == null}}">
+								未找到您的收货地址
+							</span>
+							<span wx-elif="{{default_address != null}}">
+								{{default_address.name}}<span class="mar_l_20">{{default_address.phone}}</span>
+							</span>
+						</span>
+                    <span class="ts_13 mar_10 pad_b_10"> <image class="img5" src="/images/img_26.png"/>
+							<span wx-if="{{default_address == null}}">
+								点此添加收货地址
+							</span>
+							<span wx-elif="{{default_address != null}}">
+							{{default_address.province}} 		{{default_address.city}} 		{{default_address.area}}
+							</span>
+						</span>
+                </view>
+                <image class="img6 mar_r_15" src="/images/img_25.png"/>
+            </view>
+            <image class="wx_img1" src="/images/img_27.jpg"/>
+        </view>
+    </view>
+    <!--产品信息-->
+    <view class="b_w mar_t_10">
+        <view class="row h_115 pad_10">
+            <image class="img16 fshr" src="{{goods.thumb}}"/>
+            <view class="col4 heights mar_l_20">
+                <span class="ts_15 txt_c2">{{goods.title}}</span>
+                <span class="txt_c1 ts_17">{{goods.price}}<span class="txt_c4 ts_12 pad_l_10">积分</span></span>
+            </view>
+        </view>
+        <view class="br2"></view>
+        <view class="row h_56 pad_l_15 pad_r_15 ts_14 txt_c2">
+            <span>兑换数量</span>
+            <view class="row w_81">
+                <a class="but1" bindtap="but_del">-</a>
+                <span class="but_txt">{{num}}</span>
+                <a class="but1" bindtap="but_add"  style="line-height: 27px;">+</a>
+            </view>
+        </view>
+        <view class="br2"></view>
+        <view class="row h_44 pad_l_15 pad_r_15 ts_14 txt_c2">
+            <span>配送方式</span>
+            <span>运费   免邮 <image class="img17 mar_l_10" src="/images/img_25.png"/></span>
+        </view>
+    </view>
+    <!--提交信息-->
+    <view class="fix_but1 row">
+        <span class="ts_12 txt_c2 mar_l_20">应扣积分：{{price}}<span class="ts_20 txt_c1"></span></span>
+        <span class="wid_42 but_bac1" bindtap="exchange">提交订单</span>
+    </view>
+</view>

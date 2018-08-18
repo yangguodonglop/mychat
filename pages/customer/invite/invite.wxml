@@ -1,0 +1,29 @@
+<view class='back'>
+    <image class='wx_img1' src='/images/new_img_016.png'></image>
+    <view class='ts_10 col'>
+        <view class='row3 widths'>
+            <view class='point'></view>
+            <text>【{{username}}】 邀您下载欣旅天下-让旅途更省心！</text>
+        </view>
+        <view class='wx_img_back'>
+  <canvas 
+                style="width: 250rpx;height: 250rpx;" canvas-id="qrcCanvas"/>
+        </view>
+        <view class='row3 widths'>
+            <view class='point'></view>
+            <text>分享你的专属邀请链接</text>
+        </view>
+        <view class='row w_460'>
+            <text class='one_lin'>{{invite_url}}</text>
+            <view class='but' bindtap='copyurl'>复制</view>
+        </view>
+        <view class='row3 widths'>
+            <view class='point'></view>
+            <text>你的邀请码</text>
+        </view>
+        <view class='row w_460'>
+            <text>{{invite}}</text>
+            <view class='but' bindtap='copyinvite'>复制</view>
+        </view>
+    </view>
+</view>

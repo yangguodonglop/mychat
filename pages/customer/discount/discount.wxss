@@ -1,0 +1,27 @@
+.reds{background-color: red}
+
+.h_88{height: 6.5vh; border-top: 1rpx solid #ebebeb; border-bottom: 1rpx solid #ebebeb;}
+.txt_action{line-height: 6.5vh; color: #ff7500; border-bottom: 6rpx solid #ff7500;}
+.h_100{height: 93.1vh;}
+.c_3{color: #333;}
+.c_f{color: #7f7f7f; font-size: 20rpx;}
+.ts_12{font-size: 24rpx; color: #474747;}
+.ts_14{font-size: 28rpx; color: #474747;}
+.ts_80{font-size: 80rpx; color: #333; font-weight: 600;}
+.wx_img1{width: 700rpx; height: 108rpx; margin: 25rpx;}
+.item_back{width: 700rpx; height: 240rpx; margin-left: 25rpx; margin-bottom: 25rpx;}
+.abs{width: 142rpx; height: 163rpx; bottom: 8rpx; right: 128rpx; opacity: 0.1; z-index: 100;}
+.item_top{width: 100%; height: 180rpx; border-top: 2rpx solid #f7e7d0; border-left: 2rpx solid #f7e7d0; border-right: 2rpx solid #f7e7d0; 
+border-bottom: 2rpx dashed #f7e7d0; border-radius: 12rpx; background-color: #fef9f3;}
+.item_bootm{width: 100%; height: 60rpx; border-top: 2rpx dashed #f7e7d0; border-left: 2rpx solid #f7e7d0; border-right: 2rpx solid #f7e7d0; 
+border-bottom: 2rpx solid #f7e7d0; border-radius: 12rpx; background-color: #fef9f3; line-height: 60rpx;}
+.item_top1{width: 100%; height: 180rpx; border-top: 2rpx solid #e0e0e0; border-left: 2rpx solid #e0e0e0; border-right: 2rpx solid #e0e0e0; 
+border-bottom: 2rpx dashed #e0e0e0; border-radius: 12rpx; background-color: #fafafa;}
+.item_bootm1{width: 100%; height: 60rpx; border-top: 2rpx dashed #e0e0e0; border-left: 2rpx solid #e0e0e0; border-right: 2rpx solid #e0e0e0; 
+border-bottom: 2rpx solid #e0e0e0; border-radius: 12rpx; background-color: #fafafa; line-height: 60rpx;}
+.w_240{width: 240rpx; border-right: 2rpx dashed #f7e7d0;}
+.wx_ionc1{background-color: #ffb245; color: white; font-size: 20rpx; line-height: 30rpx; padding: 0 10rpx; border-radius: 4rpx; margin-right: 15rpx;}
+.wx_ionc2{background: linear-gradient(to right, #ff9900, #ff7403); color: white; padding: 11rpx 20rpx; border-radius: 30rpx; margin-left: 36rpx;}
+.mar_t_20{margin-top: 20rpx;}
+.col5{display: flex; flex-direction: column; justify-content: center; align-items: flex-start; width: 100%; height: 100%; margin-left: 18rpx;}
+.mar_l_25{margin-left: 25rpx;}

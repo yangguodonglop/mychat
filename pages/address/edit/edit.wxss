@@ -1,0 +1,5 @@
+.wx_input{padding: 20rpx; height: 125rpx;}
+.content{background-color: #f2f2f2; height: 100vh;}
+.marg{width: 750rpx; height: 20rpx; background-color: #f2f2f2;}
+.but{width: 700rpx; height: 88rpx; color: white; font-size: 32rpx; background: linear-gradient(to left, #ff9900, #ff7403); margin: 50rpx 25rpx; border-radius: 44rpx; line-height: 88rpx; text-align: center;}
+.h_80{height: 160rpx;}

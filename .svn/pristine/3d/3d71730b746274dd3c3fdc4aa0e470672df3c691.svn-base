@@ -1,0 +1,133 @@
+<view class='h_88 row5 ts_14'>
+    <text class='{{_num == 0?"txt_action":""}}' bindtap='select' data-id='0'>推荐</text>
+    <text class="{{_num==1?'txt_action':''}}" bindtap='select' data-id='1'>出境游</text>
+    <text class="{{_num==2?'txt_action':''}}" bindtap='select' data-id='2'>国内游</text>
+    <text class="{{_num==3?'txt_action':''}}" bindtap='select' data-id='3'>周边游</text>
+    <text class="{{_num==4?'txt_action':''}}" bindtap='select' data-id='4'>定制游</text>
+</view>
+<swiper class='h_100' current="{{_num}}" bindchange='selec'>
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh;'>
+            <image src='/images/dingzhi.jpg' class='wx_img1'></image>
+            <view class='row_wrap' style='height： 500rpx;'>
+                <view class='items' wx:for="{{dt1}}" wx:key="unique" bindtap='tolink' id='{{item.id}}'>
+                    <view class='rel wx_img2'>
+                        <image class='wx_img2 abs' src='{{item.thumb}}'></image>
+                        <view class='abs adds'></view>
+                        <text class='abs txt_cw ts_12'>武汉出发</text>
+                    </view>
+                    <view class='tit1'>
+                        {{item.title}}
+                    </view>
+                    <view class='row widths'>
+                        <view class='txt_c1 ts_13'>￥ <text class='ts_18'>{{item.price}}</text> 起</view>
+                        <text class='txt_c3 ts_11'>{{item.id}}人购买</text>
+                    </view>
+                </view> 
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh;'>
+            <image src='/images/dingzhi.jpg' class='wx_img1'></image>
+            <view class='row_wrap' style='height： 500rpx;'>
+                <view class='items' wx:for="{{dt2}}" wx:key="unique" bindtap='tolink' id='{{item.id}}'>
+                    <view class='rel wx_img2'>
+                        <image class='wx_img2 abs' src='{{item.thumb}}'></image>
+                        <view class='abs adds'></view>
+                        <text class='abs txt_cw ts_12'>武汉出发</text>
+                    </view>
+                    <view class='tit1'>
+                        {{item.title}}
+                    </view>
+                    <view class='row widths'>
+                        <view class='txt_c1 ts_13'>￥ <text class='ts_18'>{{item.price}}</text> 起</view>
+                        <text class='txt_c3 ts_11'>{{item.id}}人购买</text>
+                    </view>
+                </view> 
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh;'>
+            <image src='/images/dingzhi.jpg' class='wx_img1'></image>
+            <view class='row_wrap' style='height： 500rpx;'>
+                <view class='items' wx:for="{{dt3}}" wx:key="unique" bindtap='tolink' id='{{item.id}}'>
+                    <view class='rel wx_img2'>
+                        <image class='wx_img2 abs' src='{{item.thumb}}'></image>
+                        <view class='abs adds'></view>
+                        <text class='abs txt_cw ts_12'>武汉出发</text>
+                    </view>
+                    <view class='tit1'>
+                        {{item.title}}
+                    </view>
+                    <view class='row widths'>
+                        <view class='txt_c1 ts_13'>￥ <text class='ts_18'>{{item.price}}</text> 起</view>
+                        <text class='txt_c3 ts_11'>{{item.id}}人购买</text>
+                    </view>
+                </view> 
+
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh;'>
+            <image src='/images/dingzhi.jpg' class='wx_img1'></image>
+            <view class='row_wrap' style='height： 500rpx;'>
+                <view class='items' wx:for="{{dt4}}" wx:key="unique" bindtap='tolink' id='{{item.id}}'>
+                    <view class='rel wx_img2'>
+                        <image class='wx_img2 abs' src='{{item.thumb}}'></image>
+                        <view class='abs adds'></view>
+                        <text class='abs txt_cw ts_12'>武汉出发</text>
+                    </view>
+                    <view class='tit1'>
+                        {{item.title}}
+                    </view>
+                    <view class='row widths'>
+                        <view class='txt_c1 ts_13'>￥ <text class='ts_18'>{{item.price}}</text> 起</view>
+                        <text class='txt_c3 ts_11'>{{item.id}}人购买</text>
+                    </view>
+                </view> 
+
+            </view>
+        </scroll-view>
+    </swiper-item>
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh;'>
+            <image src='/images/dingzhi.jpg' class='wx_img1'></image>
+            <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class='inpt_back col1 ts_14'>
+                <text class='tit_txt'>我要定制·优惠省心</text>
+                <view class='hr2'></view>
+                <view class='hr'></view>
+                <view class='row w_620 ts_13 txt_c2'>
+                    <text>出发地</text><text>目的地</text>
+                </view>
+                <view class='row w_620'>
+                    <input value="{{city}}" name="start" type='text' placeholder='填写出发地'></input>
+                    <image class='wx_img3' src='/images/img_63.png'></image> 
+                    <input  type='text' name="end" style="text-align:right" placeholder='填写目的地'></input>
+                </view>
+                <view class='hr1'></view>
+                <view class='row3 w_620'>
+                    <text class='fshr' >联系人</text>
+                    <input name="name" type='text' placeholder='请填写你的姓名'></input>
+                </view>
+                <view class='hr1'></view>
+                <view class='row3 w_620'>
+                    <text class='fshr' >手机号</text>
+                    <input  name="phone" type='number' maxlength="11" placeholder='请填写你的手机号码'></input>
+                </view>
+                <view class='hr1'></view>
+                <view class='row3 w_620'>
+                    <text class='fshr' >留　言</text>
+                    <input name="contents" type='text' placeholder='请填写你的特殊需求'></input>
+                </view>
+                <view class='hr1'></view>
+                  <button class='but' formType="submit">提交定制</button>
+                <!-- <view class='but' formType="submit">提交定制</view> -->
+            </view>
+            </form>
+        </scroll-view>
+    </swiper-item>
+</swiper>

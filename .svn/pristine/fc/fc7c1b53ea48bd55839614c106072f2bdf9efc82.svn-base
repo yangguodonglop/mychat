@@ -1,0 +1,14 @@
+<view id="bind" class='me'>
+    <view class='marg'></view>
+    <view class="col_2 ali txt_16 con_tal">
+        <view class="con_item">
+            <view class="con_item_l c_txt1 txt_15 con_item_phone">
+                <span class="span_phone ts_15">邮 箱：</span>
+                <input type="text" placeholder="请输入您的邮箱" class="input_item txt_14 c_txt10 ts_15" bindblur="blurEmail" style="padding-left: 5px;" />
+            </view>
+        </view>
+    </view>
+    <view class="drop_btn">
+        <view bindtap="sendEmail" class="btn_text c_white">发送验证</view>
+    </view>
+</view>

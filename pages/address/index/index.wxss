@@ -1,0 +1,28 @@
+.mui-content {
+    background-color: #efeff4;
+    -webkit-overflow-scrolling: touch;
+}
+
+page {
+    background-color: #f7f7f7;
+}
+
+.br3 {
+    width: 700rpx;
+}
+
+.ts_16 {
+    font-size: 32rpx;
+    color: #333;
+    width: 700rpx;
+}
+
+.ts_13 {
+    font-size: 26rpx;
+    color: #474747;
+}
+
+.ts_12 {
+    width: 700rpx;
+}
+.txt_cw{color: white;}

@@ -1,0 +1,32 @@
+<view class="mui-content mar_t_-9">
+    <block wx:for="{{address}}" wx:for-item="item" wx:key="unique">
+        <view class="col4 h_118 b_w mar_t_10 txt_c2 pad_t_10 pad_b_10 pad_l_15 ">
+            <view class="row ts_16 mar_b_10">
+                <span>{{item.name}}</span>
+                <span>{{item.phone}}</span>
+            </view>
+            <view class="ts_13 mar_b_10">{{item.province}} {{item.city}} {{item.area}} {{item.address}}</view>
+            <view class="br3"></view>
+            <view class="row ts_12 ">
+                <view>
+                    <image bindtap="setDefaultAddress" data-id="{{item.id}}" wx:if="{{item.is_default == 1}}" class="img2 mar_r_5" src="../../../images/img_41.png" />
+                    <image bindtap="setDefaultAddress" data-id="{{item.id}}" wx:if="{{item.is_default == 0}}" class="img2 mar_r_5" src="../../../images/img_30.png" /> 默认地址
+                </view>
+                <view>
+
+                    <image bindtap="editAddress" data-id="{{item.id}}" class="img2 mar_r_5" src="../../../images/img_28.png" />
+                    <span bindtap="editAddress" data-id="{{item.id}}">编辑</span>
+                    <image bindtap="deleteAddress" data-id="{{item.id}}" class="img2 mar_r_5 mar_l_20 " src="../../../images/img_29.png" />
+                    <span bindtap="deleteAddress" data-id="{{item.id}}">删除</span>
+
+                </view>
+            </view>
+        </view>
+    </block>
+    <view class="fix_but b_w">
+        <view class="txt_cw ts_16 but_bac mar_13" bindtap="addAdress" data-url="/pages/address/create/create">
+            添加新地址
+        </view>
+    </view>
+
+</view>

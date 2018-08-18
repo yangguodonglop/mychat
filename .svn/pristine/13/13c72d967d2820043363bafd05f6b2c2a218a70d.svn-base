@@ -1,0 +1,21 @@
+.back{background-color: #f5f5f5; height: 100vh;}
+.soll{height: 100vh;}
+.wx_tit{padding-left: 30rpx; height: 50rpx; color: #333; font-size: 35rpx; line-height: 50rpx;}
+.wx_item{padding-left: 20rpx; height: 80rpx; color: #474747; font-size: 25rpx; line-height: 80rpx; background-color: white; border-bottom: 1rpx solid #f5f5f5;}
+
+.reds{background-color: rebeccapurple;}
+
+.heights{align-self: flex-start;}
+.col4{width: 60rpx; font-size: 30rpx; display: flex; flex-direction: column; justify-content: space-between; align-items: center; height: 95vh; color: #555;}
+.abc_back{background-color: black; opacity: 0.1; position: absolute; top: 0; right: 0; width: 60rpx; height: 100vh;}
+.show_abc{width: 140rpx; height: 140rpx; top: 35%; left: 50%; margin-left: -70rpx;}
+.hidd_abc{visibility: hidden;}
+.abs{font-size: 120rpx; line-height: 120rpx; text-align: center;}
+::-webkit-scrollbar  
+{  
+    width: 0;  
+    height: 0; 
+    color: transparent;  
+}  
+
+

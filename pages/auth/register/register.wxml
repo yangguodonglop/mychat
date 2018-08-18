@@ -1,0 +1,29 @@
+	<view class="col1 ts_16 mar_t_30 txt_c2">
+			<view id="login1" class="widths col h_170" >
+				<view class="row mar_t_-5 widths">   
+					<span class="w_80 fshr mar_t_-2">手机号</span>
+					<input style="border: 0; background-color: transparent;margin-right:121px;" type="number" name="phone" bindblur="blurPhone" maxlength="11" placeholder="手机号 / 用户名" />
+				</view>
+				<view class="login_hr mar_t_-9"></view>
+				<view class="row mar_t_-5 widths">   
+					<span class="w_80 fshr mar_t_-2">验证码</span>
+					<input style="border: 0; background-color: transparent; flex-grow: 1; " type="number" name="code" bindblur="blurCode"  placeholder="输入短信验证码"/>
+					<span class="txt_c4 login_txt" style="margin-bottom: 1px;">|</span>
+					<span class="w_110 txt_c4 fshr" bindtap="setVerify">{{VerifyCode}}</span>
+				</view>
+				<view class="login_hr mar_t_-9"></view>
+				<view class="row mar_t_-5 widths">     
+					<text class="w_80 fshr mar_t_-2" decode="{{true}}">密&nbsp; &nbsp;&nbsp;码</text>        
+					<input style="border: 0; background-color: transparent;margin-right:121px;" type="password" name="password" bindblur="blurPassword" placeholder="请输入密码"/>
+				</view>
+				<view class="login_hr mar_t_-9"></view>
+			</view>
+		
+			<view onclick="" class="ts_12 txt_c3 login_hyxy pad_t_10 mar_10">
+			  	<image bindtap="check" data-id="1" wx:if="{{check == 1}}" class="me_iocn1 mar_l_10 mar_r_10" src="../../../images/img_30.png" /> 
+			  	<image bindtap="check" data-id="2" wx:if="{{check == 2}}" class="me_iocn1 mar_l_10 mar_r_10" src="../../../images/img_41.png" /> 
+      
+           同意心旅天下《会员服务协议》
+			</view>
+			<span class="but_bac txt_cw width_90 mar_t_20" bindtap="doRegister">注册</span>
+		</view>

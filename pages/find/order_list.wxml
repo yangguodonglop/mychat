@@ -1,0 +1,2 @@
+<!--pages/find/order_list.wxml-->
+<web-view src="http://m.xinlv123.com/customization/miniOrder_list.html"></web-view>

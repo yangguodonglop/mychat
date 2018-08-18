@@ -1,0 +1,9 @@
+/* pages/address/create/create.wxss */
+
+page {
+    background-color: #f7f7f7;
+}
+.wx_input{padding: 20rpx; margin-left: -20rpx;}
+.but{width: 700rpx; height: 88rpx; color: white; font-size: 32rpx; background: linear-gradient(to left, #ff9900, #ff7403); margin: 50rpx 25rpx; border-radius: 44rpx; line-height: 88rpx; text-align: center;}
+.wx_input{padding: 20rpx; height: 125rpx;}
+.h_80{height: 160rpx;}

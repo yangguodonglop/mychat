@@ -1,0 +1,60 @@
+<view class="col1 ts_16 mar_t_60 txt_c2" id="login">
+    <view class="row5 margin_t_15 widths">
+        <span id="rd1" class="login_rd {{currentTab==0 ? 'login_rd_action' : ''}}" data-current="0" bindtap="swichNav">账号登录</span>
+        <span id="rd2" class="login_rd {{currentTab==1 ? 'login_rd_action' : ''}}" data-current="1" bindtap="swichNav">手机验证码登录</span>
+    </view>
+    <swiper current="{{currentTab}}" class="swiper-box" bindchange="current_page">
+        <!--账号登录-->
+        <swiper-item class="widths col h_118" v-if="isActive" >
+            <view class="login_hr mar_t_-5"></view>
+            <view class="row mar_t_-5 widths">
+                <span class="w_80 fshr mar_t_-2">账号</span>
+                <input style="border: 0; background-color: transparent; margin-right:121px;" type="number" maxlength="11" name="phone" bindblur="blurPhone" placeholder="手机号" />
+            </view>
+            <view class="login_hr mar_t_-9"></view>
+            <view class="row mar_t_-5 widths">
+                <span class="w_80 fshr mar_t_-2">密码</span>
+                <input style="border: 0; background-color: transparent; margin-right:121px;" name="password" bindblur="blurPassword" type="password" placeholder="请输入密码" o/>
+            </view>
+            <view class="login_hr mar_t_-9"></view>
+
+        </swiper-item>
+        <!--手机登录-->
+
+        <swiper-item class="widths col h_118" v-else>
+            <view class="login_hr mar_t_-5"></view>
+            <view class="row mar_t_-5 widths">
+                <span class="w_80 fshr mar_t_-2">手机号</span>
+                <input style="border: 0; background-color: transparent; margin-right:121px;" type="number" maxlength="11" name="linkTel" bindblur="blurTel" placeholder="注册或绑定手机号" />
+            </view>
+            <view class="login_hr mar_t_-9"></view>
+            <view class="row mar_t_-5 widths">
+                <span class="w_80 fshr mar_t_-2">验证码</span>
+                <input style="border: 0; background-color: transparent;" type="number" name="code" bindblur="blurCode" placeholder="验证码" />
+
+                <span class="txt_c4 login_txt" style="margin-bottom: 1px;">|</span>
+                <span class="w_150 txt_c4 fshr" bindtap="setVerify">{{VerifyCode}}</span>
+            </view>
+            <view class="login_hr mar_t_-9"></view>
+
+        </swiper-item>
+    </swiper>
+
+    <span bindtap="doLogin" class="but_bac txt_cw width_90 mar_t_30">登录</span>
+    <!-- <span bindtap="doRegister" data-url="/pages/auth/register/register" class="login_but2 width_90 mar_t_20">注册</span> -->
+</view>
+<!--第三方登录-->
+<view class="zxb_fixed widths" id="dsf_login" style="bottom: 0;">
+    <view class="row4 txt_c4 ts_14">
+        <span class="login_hx mar_r_10"></span>第三方账号登录
+        <span class="login_hx mar_l_10"></span>
+    </view>
+
+
+    <view class="row5 mar_b_20 mar_t_10">
+        <button wx:if="{{canIUse}}" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+            <image class='wx_iocn1' src='/images/img_73.png'></image>
+        </button>
+        <view wx:else>请升级微信版本</view>
+    </view>
+</view>

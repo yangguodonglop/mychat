@@ -1,0 +1,79 @@
+{
+    "pages": [
+        "pages/index/home",
+        "pages/hotel/get_hotel",
+        "pages/integral/index/index",
+        "pages/destination/index/index",
+        "pages/address/index/index",
+        "pages/address/create/create",
+        "pages/customer/index/index",
+        "pages/tickets/index",
+        "pages/find/index",
+        "pages/discover/index",
+        "pages/auth/login/login",
+        "pages/customer/setting/index/index",
+        "pages/customer/setting/userinfo/userinfo",
+        "pages/customer/setting/email/email",
+        "pages/order/list/list",
+        "pages/order/placeorder/placeorder",
+        "pages/order/payment/payment",
+        "pages/details/index/index",
+        "pages/customer/setting/phone/setphone",
+        "pages/search/search",
+        "pages/integral/item/item",
+        "pages/all_tours/all_tours",
+        "pages/customer/invite/invite",
+        "pages/customer/discount/discount",
+        "pages/customer/feedback/feedback",
+        "pages/customer/about/about",
+        "pages/customer/telephone/telephone",
+        "pages/customer/telephone_add/telephone_add",
+        "pages/select_city/select_city",
+        "pages/address/edit/edit",
+        "pages/customer/discount/getcoupon/list",
+        "pages/integral/details/index",
+        "pages/integral/makeorder/index"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "欣旅天下",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "color": "#474747",
+        "selectedColor": "#f80",
+        "list": [
+            {
+                "pagePath": "pages/index/home",
+                "text": "首页",
+                "iconPath": "images/img_53.png",
+                "selectedIconPath": "images/img_52.png"
+            },
+            {
+                "pagePath": "pages/tickets/index",
+                "text": "景点门票",
+                "iconPath": "images/img_55.png",
+                "selectedIconPath": "images/img_54.png"
+            },
+            {
+                "pagePath": "pages/find/index",
+                "text": "发现",
+                "iconPath": "images/img_57.png",
+                "selectedIconPath": "images/img_56.png"
+            },
+            {
+                "pagePath": "pages/integral/index/index",
+                "text": "积分商城",
+                "iconPath": "images/img_59.png",
+                "selectedIconPath": "images/img_58.png"
+            },
+            {
+                "pagePath": "pages/customer/index/index",
+                "text": "我的",
+                "iconPath": "images/img_61.png",
+                "selectedIconPath": "images/img_60.png"
+            }
+        ]
+    }
+}

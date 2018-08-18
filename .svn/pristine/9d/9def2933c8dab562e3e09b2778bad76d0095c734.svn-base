@@ -1,0 +1,60 @@
+<swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='slide-image'>
+    <block wx:for="{{imgUrls}}" wx:key="unique">
+        <swiper-item>
+            <image src="{{item}}" class="slide-image"/>
+        </swiper-item>
+    </block>
+</swiper>
+<view class='marg'></view>
+<!--人气必玩-->
+<view class="hot b_w pad_b_5">
+    <!--标题-->
+    <view class="tit1 row">
+        <view class="ts_15 txt_c1">
+            <image class="tit_iocn" src="/images/img_36.png"></image>人气必玩</view>
+        <view bindtap="toSearch" class="txt_c3 ts_13">更多 ></view>
+    </view>
+    <!--Top 1、2、3-->
+    <view class="row pad_r_10 pad_l_10 mar_t_3 mar_b_10 txt_c2">
+        <view bindtap='tolink' data-id="{{item.id}}" class="hot_show" wx:for="{{dataList}}" wx:key="unique" style="width: 32%;">
+            <view class="rel">
+                <span class="abs hot_tit" id="hot_c{{index}}">TOP{{index+1}}</span>
+                <image class="hot_img" src="{{item.thumb}}" wx:if="{{item.thumb}}"> </image>
+            </view>
+            <view class="col4 mar_b_5">
+                <span class="ts_14 pad_r_3 mar_t_5" style="line-height: 20px;    height: 20px;overflow: hidden; width: 100%;padding: 0px 2px;text-overflow: ellipsis;white-space: nowrap;">{{item.title}}</span>
+                <view class="txt_c1 ts_13 mar_t_5">￥
+                    <span class="ts_17">{{item.price}}</span>
+                    <span class="txt_c2 ts_13"> 起</span>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='marg'></view>
+<!--景点推荐-->
+<!--标题-->
+<view class="tit1 row b_w">
+    <view class="ts_15 txt_c1">
+        <image class="tit_iocn" src="/images/img_36.png"></image>热门景点</view>
+    <view bindtap="toSearch" class="txt_c3 ts_13">更多 ></view>
+</view>
+<!--列表-->
+<view class="row3 b_w h_105" wx:for="{{dataList1}}" wx:key="unique" bindtap='tolink' data-id='{{item.id}}'>
+    <image class="w_81 h_80 mar_l_13 mar_r_15 fshr" mode="aspectFill" src="{{item.thumb}}"></image>
+    <view class="col3">
+        <span class="ts_14 c_txt1">{{item.title}}</span>
+        <view class="ts_10">
+            <span class="iocn5">优惠</span>
+            <span class="iocn6">返现</span>
+            <span class="iocn7">今日可订</span>
+        </view>
+        <view class="row widths ts_12 txt_c3">
+            <span>{{item.start}} 出发</span>
+            <view class="txt_11 txt_c1 pad_r_15">
+                ￥
+                <span class="ts_18">{{item.price}}</span> 起
+            </view>
+        </view>
+    </view>
+</view>

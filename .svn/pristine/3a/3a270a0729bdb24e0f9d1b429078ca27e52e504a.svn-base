@@ -1,0 +1,96 @@
+<view class='h_88 row5 ts_14'>
+    <text class='{{_num == 0?"txt_action":""}}' bindtap='select' data-id='0'>未使用</text>
+    <text class="{{_num==1?'txt_action':''}}" bindtap='select' data-id='1'>已使用</text>
+    <text class="{{_num==2?'txt_action':''}}" bindtap='select' data-id='2'>已过期</text>
+</view>
+<swiper class='h_100 ts_12' current="{{_num}}" bindchange='selec'>
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh;'>
+            <image bindtap='getCoupon' src='/images/new_img_07.png' class='wx_img1'></image>
+
+            <view class='item_back rel' wx:for="{{data1}}" wx:key="unique">
+                <image class='abs' src='/images/new_img_05.png'></image>
+                <view class='item_top row'>
+                    <view class='col1 w_240 fshr'>
+                        <view class='ts_14'>￥ <text class='ts_50'>{{item.sale}}</text></view>
+                        <text class='c_3' wx:if="{{item.is_claim == 2}}">无金额门槛</text>
+                        <text class='c_3' wx:if="{{item.is_claim == 1}}">满减</text>
+                    </view>
+                    <view class='col5'>
+                        <view>
+                        <text class='wx_ionc1'>现金券</text>
+                         <text class='c_3'>{{item.name}}</text>
+                          </view>
+                           <view>
+                           <text class='c_3' wx:if="{{item.is_claim == 1}}">{{item.rule_title}}</text>
+                         </view>
+                        <view class='mar_t_20'><text class='c_f'>{{item.start_time}}至{{item.end_time}}</text></view>
+                    </view>
+                </view>
+                <view class='item_bootm c_3'>
+                    <text class='mar_l_25'>仅限购买欣旅天下旅游商品</text>
+                </view>
+            </view>
+          
+        </scroll-view> 
+    </swiper-item>
+
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh; padding-top: 25rpx;'>
+            <view class='item_back rel' wx:for="{{data2}}" wx:key="unique">
+                <image class='abs' src='/images/new_img_05.png'></image>
+                <view class='item_top1 row'>
+                    <view class='col1 w_240 fshr'>
+                        <view class='ts_14'>￥ <text class='ts_50'>{{item.sale}}</text></view>
+                   <text class='c_3' wx:if="{{item.is_claim == 2}}">无金额门槛</text>
+                        <text class='c_3' wx:if="{{item.is_claim == 1}}">满减</text>
+                    </view>
+                    <view class='col5'>
+                        <view>
+                        <text class='c_3'>{{item.name}}</text>
+                        </view>
+                      
+                       <view>
+                           <text class='c_3' wx:if="{{item.is_claim == 1}}">{{item.rule_title}}</text>
+                         </view>
+
+          
+                    </view>
+                </view>
+                <view class='item_bootm1 c_3'>
+                    <text class='mar_l_25'>仅限购买欣旅天下旅游商品</text>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+        <scroll-view scroll-y style='height: 93.5vh; padding-top: 25rpx;'>
+          <view class='item_back rel' wx:for="{{data3}}" wx:key="unique">
+                <image class='abs' src='/images/new_img_05.png'></image>
+                <view class='item_top1 row'>
+                    <view class='col1 w_240 fshr'>
+                        <view class='ts_14'>￥ <text class='ts_50'>{{item.sale}}</text></view>
+                   <text class='c_3' wx:if="{{item.is_claim == 2}}">无金额门槛</text>
+                        <text class='c_3' wx:if="{{item.is_claim == 1}}">满减</text>
+                    </view>
+                    <view class='col5'>
+                        <view>
+                        <text class='c_3'>{{item.name}}</text>
+                        </view>
+                      
+                       <view>
+                           <text class='c_3' wx:if="{{item.is_claim == 1}}">{{item.rule_title}}</text>
+                         </view>
+
+            <view class='mar_t_20'><text class='c_f'>{{item.start_time}}至{{item.end_time}}</text></view>
+                    </view>
+                </view>
+                <view class='item_bootm1 c_3'>
+                    <text class='mar_l_25'>仅限购买欣旅天下旅游商品</text>
+                </view>
+            </view>
+        </scroll-view>
+    </swiper-item>
+   
+</swiper>

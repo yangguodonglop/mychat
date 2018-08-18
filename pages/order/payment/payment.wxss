@@ -1,0 +1,76 @@
+@import '/assets/css/personal_set.wxss';
+@import '/assets/css/new_style.wxss';
+
+
+body{
+  background: #F7F7F7;
+}
+.back_white {
+    background-color: white;
+}
+.ali {
+    align-items: center;
+}
+.row_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.padding_10 {
+    padding: 10px;
+}
+.col_1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.c_txt1 {
+    color: #474747;
+    font-size: 20px;
+}
+
+.margin_t_3 {
+    margin-top: 3px;
+}
+.c_txt5_new {
+    color: #ff7403;
+    font-weight: 100;
+}
+.txt_14 {
+    font-size: 14px;
+    
+}
+.c_txt3 {
+    color: #ff740d;
+}
+.txt_12 {
+    font-size: 12px;
+    padding-left: 5px
+}
+back_white {
+    background-color: white;
+}
+.c_txt4 {
+    color: #666666;
+}
+.payment_iocn {
+    width: 32px;
+    height: 32px;
+}
+.margin_l_15 {
+    margin-left: 15px;
+}
+.ts_12 {
+font-size:12px;
+
+}
+.ts_20 {
+    font-size: 20px;
+}
+.order_iocn1 {
+    width: 18px;
+    height: 18px;
+
+    float: right;
+    }
+

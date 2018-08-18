@@ -1,0 +1,16 @@
+<view class='back col5'>
+    <image class='wx_img' src='/images/new_img_04.png'></image>
+    <text class='ts_14 txt_c2 mar_t_8'>欣旅天下</text>
+    <view class='row widths mar_t_70'>
+        <text class='ts_15 txt_c2'>当前版本</text>
+        <text class='ts_14 txt_c3'>V1.0.0</text>
+    </view>
+    <view class='row widths mar_t_20'>
+        <text class='ts_15 txt_c2'>服务协议</text>
+        <text class='ts_14 txt_c4'>></text>
+    </view>
+    <view class='row widths mar_t_2'>
+        <text class='ts_15 txt_c2'>隐私政策</text>
+        <text class='ts_14 txt_c4'>></text>
+    </view>
+</view>

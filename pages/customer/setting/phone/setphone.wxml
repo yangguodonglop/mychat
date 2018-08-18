@@ -1,0 +1,31 @@
+<view id="bind" class='me'>
+<view class='marg'></view>
+    <view class="col_2 ali txt_15 con_tal" style='width: 700rpx;'>
+        <view class="con_item">
+            <view class="con_item_l c_txt1 txt_15 con_item_phone">
+                <span class="span_phone ts_15">手机号</span>
+                <input type="number" placeholder="请输入需要绑定的手机号" name="linkTel" maxlength="11" bindblur="blurTel"
+                       class="input_item txt_14 c_txt10 ts_15" style="margin-bottom: 0px; border: 0px; margin-left: 11px;"/>
+            </view>
+        </view>
+        <view class="con_item">
+            <view class="con_item_l c_txt1 txt_15 con_item_phone">
+                <span class="span_phone ts_15">验证码</span>
+                <input type="number" placeholder="输入短信验证码" bindblur="blurCode"
+                       class="input_item txt_14 c_txt10 ts_15" style="margin-bottom: 0px; border: 0px; margin-left: 11px;"/>
+                <span class="span_phone span_br"></span>
+                <span class="span_phone c_txt11 ts_15" bindtap="setVerify">{{VerifyCode}}</span>
+            </view>
+        </view>
+        <view class="con_item">
+            <view class="con_item_l c_txt1 txt_15 con_item_phone">
+                <span class="span_phone ts_15" >密　码</span>
+                <input type="password" placeholder="请输入密码"  name="password"  bindblur="blurPassword"
+                       class="input_item txt_14 c_txt10 ts_15" style="margin-bottom: 0px; border: 0px; margin-left: 11px;"/>
+            </view>
+        </view>
+    </view>
+    <view class="drop_btn" bindtap="setPhonePassword">
+        <view class="btn_text c_white" >确定</view>
+    </view>
+</view>

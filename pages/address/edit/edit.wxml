@@ -1,0 +1,34 @@
+<view class="content txt_c2 ts_14">
+    <view class='marg'></view>
+    <view class="b_w">
+        <view class="h_44 b_w row pad_l_15 pad_r_15">
+            <span class="w_75 ts_w_600">收货人</span>
+            <input type="text" name="name" value="{{name}}" bindblur='blurName' placeholder="填写收货人" style="border: 0; flex-grow: 1; height: 40px; margin-top: 3px; font-size: 14px;" />
+        </view>
+        <view class="br4"></view>
+        <view class="h_44 b_w row pad_l_15 pad_r_15">
+            <span class="w_75 ts_w_600">联系电话</span>
+            <input type="number" maxlength="11" name="phone" bindblur='blurPhone' id="" value="{{phone}}" placeholder="填写联系电话" style="border: 0; flex-grow: 1; height: 40px; margin-top: 3px; font-size: 14px;" />
+        </view>
+        <view class="br4"></view>
+        <view class="h_44 b_w row pad_l_15 pad_r_15">
+            <span class="w_75 ts_w_600">所在地区</span>
+            <picker style="border: 0; flex-grow: 1; height: 40px; margin-top: 23px; font-size: 14px;" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+                <view class="picker">
+                    {{region[0]}}，{{region[1]}}，{{region[2]}}
+                </view>
+            </picker>
+            <image class="img17" src="../../../images/img_25.png" />
+        </view>
+        <view class="br4"></view>
+        <view class="h_80 b_w row1 pad_l_15 pad_r_15">
+            <span class="w_75 ts_w_600  mar_t_10">详细地址</span>
+            <textarea class='wx_input' type="text" name="address" bindblur='blurAddress' id="" value="{{address}}" placeholder="填写地址"></textarea>
+        </view>
+    </view>
+
+    <view bindtap="editAddress" class='but'>修改地址</view>   
+
+
+
+</view>

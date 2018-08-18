@@ -1,0 +1,10 @@
+.back{background-color: #f5f5f5; height: 100vh;}
+.col5{display: flex; flex-direction: column; justify-content: flex-start; align-items: center;}
+.wx_img{width: 146rpx; height: 146rpx; margin-top: 80rpx;}
+.ts_14{font-size: 28rpx;}
+.ts_15{font-size: 30rpx; padding-left: 25rpx;}
+.row{height: 90rpx; background-color: white;}
+.txt_c4,.txt_c3{padding-right: 25rpx;}
+.mar_t_70{margin-top: 70rpx;}
+.mar_t_20{margin-top: 20rpx;}
+.mar_t_2{margin-top: 2rpx;}

@@ -1,0 +1,61 @@
+<view id="me" class='me'>
+    <view class='marg'></view>
+    <view class="col_2 ali txt_15 con_tal" style='width: 700rpx;'>
+        <view class="con_item" bindtap='setUserInfo'>
+            <view class="con_item_l c_txt1 ts_15 txt_c2">个人信息</view>
+            <view class="con_item_r">
+                <span class="span_text c_txt1 txt_12 ts_15 txt_c4">{{username}}</span>
+                <view>
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </view>
+            </view>
+        </view>
+        <view class="con_item c_txt1" bindtap='setPhone'>
+            <view class="con_item_l c_txt1 ts_15 txt_c2">手机绑定</view>
+            <view class="con_item_r">
+                <span class="span_text c_txt1 txt_12 ts_15 txt_c4">{{phone}}</span>
+                <a>
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+            </view>
+        </view>
+        <view class="con_item c_txt1" bindtap='setEmail'>
+            <view class="con_item_l c_txt1 ts_15 txt_c2">邮箱绑定</view>
+            <view class="con_item_r">
+                <span class="span_text c_txt1 txt_12 ts_15 txt_c4">{{email}}</span>
+                <a>
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+            </view>
+        </view>
+
+        <!-- <view class="con_item c_txt1">
+            <view class="con_item_l c_txt1 ts_15 txt_c2">登录密码</view>
+            <view class="con_item_r">
+                <span class="span_text c_txt1 txt_12 ts_15 txt_c4">修改</span>
+                <a>
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+            </view>
+        </view> -->
+    </view>
+
+    <view class='marg'></view>
+    <view class="col_2 ali txt_15 con_tal" style='width: 700rpx;'>
+        <view class="con_item c_txt1">
+            <view class="con_item_l c_txt1 ts_15 txt_c2">上级推荐人</view>
+            <view class="con_item_r">
+                <a>
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+            </view>
+        </view>
+    </view>
+
+    <view class='marg1'>
+        <view bindtap="logout" class="btn_text">退出登录</view>
+    </view>
+    <!-- <view class="drop_btn">
+        <view bindtap="logout" class="btn_text c_white">退出登录</view>
+    </view> -->
+</view>

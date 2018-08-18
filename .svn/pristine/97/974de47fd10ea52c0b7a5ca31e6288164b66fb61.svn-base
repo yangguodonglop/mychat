@@ -1,0 +1,10 @@
+/* pages/integral/item/item.wxss */
+scroll-view{background-color: #f2f3f4}
+.wx_img1{width: 750rpx; height: 196rpx; margin-bottom: 10rpx;}
+.wx_img2{width: 194rpx; height: 194rpx; margin: 28rpx;}
+.wx_img3{width: 142rpx; height: 52rpx;}
+.h_250{height: 250rpx; padding-right: 30rpx; border-bottom: 1rpx solid #f2f3f4}
+.ts_16{font-size: 32rpx;}
+.ts_12{font-size: 24rpx;}
+
+.reds{background-color: red}

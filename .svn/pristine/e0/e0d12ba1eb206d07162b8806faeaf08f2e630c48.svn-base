@@ -1,0 +1,43 @@
+<view id="me" class='me'>
+    <view class='marg'></view>
+    <view class="col_2 ali txt_16 con_tal" style='width: 700rpx;'>
+        <view class="con_item con_item_active">
+            <view class="con_item_l c_txt1 txt_15 txt_c2 fshr">头像</view>
+            <view class="con_item_r" bindtap='chooseImageTap'>
+                <span class="span_text c_txt1 txt_12 span_text_active">
+                    <image class='wx_img1' src="{{avatar_url}}" class="img_con_s" />
+                </span>
+                <a href="#">
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+            </view>
+        </view>
+        <view class="con_item c_txt1">
+            <view class="con_item_l c_txt1 txt_15 ts_18 txt_c2 fshr">昵称</view>
+            <view bindtap="changeName" class="con_item_r {{change_name}}">
+                <span class="span_text c_txt1 txt_12 txt_c4">{{username}}</span>
+                <a href="#">
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+
+            </view>
+
+            <view class="con_item_r {{hide_name}}">
+                <input maxlength="10" placeholder="" focus="{{focus}}" bindblur="do_change_name" placeholder="输入新的昵称" />
+            </view>
+        </view>
+        <view class="con_item c_txt1">
+            <view class="con_item_l txt_15 ts_18 txt_c2 fshr">签名</view>
+            <view bindtap="changeSign" class="con_item_r {{change_sign}}">
+                <span class="span_text txt_12 txt_c4 sign one_lin">{{sign}}</span>
+                <a href="#">
+                    <image src="/images/new_img_01.png" class="img_con" />
+                </a>
+            </view>
+            <view class="con_item_r mar_t_50 {{hide_sign}}">
+                <textarea bindblur="do_change_sign" placeholder="输入新的签名" focus="{{focus}}" />
+            </view>
+
+        </view>
+    </view>
+</view>

@@ -1,0 +1,31 @@
+<scroll-view scroll-y >
+  <image class='wx_iocn1' src='/images/banner4.jpg'></image>
+	<!--积分  兑换记录-->
+	<view class="row h_44 b_w ts_15 txt_c2" id='title'>
+        <view class='wid_49'><image class='wx_iocn2' src='/images/money.png'></image> 积分 <text class='txt_c1 mar_l_5'>{{integral}}</text></view>
+        <view class='wid_49 bord_l' bindtap='integrallist'><image class='wx_iocn2' src='/images/money_dh.png'></image> 兑换记录</view>
+	</view>
+
+  <view class='b_w mar_t_10 row1'>
+      <!--精品  热门兑换-->
+      <view class='w_150 ts_14 txt_c2'>
+        <block wx:for="{{data}}" wx:key="unique">
+            <view class='{{index==dataindex?"item_active":"item"}}' bindtap='onitem' id='item{{index}}'>{{item.name}}</view>
+        </block>
+      </view>
+      <!--商品-->
+      <scroll-view scroll-y class='widths ts_12 b_w' style='height:{{height}}px;' bindscroll="scroll" scroll-into-view="{{onitemid}}" scroll-top="{{scrollTop}}">
+          <!-- 模块 -->
+          <view class='pad_10' wx:for="{{data}}" wx:key="unique" id='id{{index}}'>
+              <image class='wx_iocn3' src='{{item.mobile_thumb}}' bindtap='open_item_list' data-id="{{item.id}}"></image>
+              <view class='row_wrap'>
+                  <navigator class="col1 wid_48" wx:for="{{item.product}}" wx:key="unique" id='{{item.id}}' url='../details/index?id={{item.id}}'>
+                      <image class="wx_iocn4" src="{{item.thumb}}"/>
+                      <span class="mar_t_5 one_lin">{{item.title}}</span>
+                      <span class="mar_t_5 txt_c1">{{item.price}}积分</span>
+                  </navigator>
+              </view>
+          </view>
+      </scroll-view>
+  </view>
+</scroll-view>

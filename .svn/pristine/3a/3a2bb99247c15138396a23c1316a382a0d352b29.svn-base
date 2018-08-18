@@ -1,0 +1,17 @@
+<scroll-view scroll-y>
+
+        <view  class='h_250 row b_w' wx:for="{{list}}" wx:key="unique">
+        <image class='wx_img2 fshr' src='{{item.thumb}}'></image> 
+        <view class='col'>
+            <text class='txt_c2 ts_16'>{{item.title}}</text>
+            <view class='row widths'>
+                <view class='ts_16 txt_c1'>{{item.price}} <text class='txt_c4 ts_12'>积分</text></view>
+                <image bindtap='exchange_good' data-id="{{item.product_id}}"    class="wx_img3" style="width: 71px;" src="/images/msdh.png" />
+            </view>
+        </view>
+    </view>
+</scroll-view>
+
+
+
+

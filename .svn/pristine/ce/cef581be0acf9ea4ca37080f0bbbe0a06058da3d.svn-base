@@ -1,0 +1,29 @@
+<view id="pay">
+  <!--支付详情-->
+  <view class="back_white margin_t_55">
+    <view class="row_2 padding_10 ali">
+      <view class="col_1">
+        <span class="margin_t_3 txt_16 c_txt1">
+          在线支付:
+          <span class="c_txt5 c_txt5_new">¥ {{price}}</span>
+        </span>
+      </view>
+    </view>
+  </view>
+  <!--选择支付方式-->
+			<view class="margin_t_10 back_white padding_r_10 txt_14 c_txt4">
+				<view class="order_details_hr"></view>
+		
+				<label id="check1" class="zxb_but row ali widths padding_10 br1" style='position: relative;'  style="justify-content: flex-start;" >
+					<image class="payment_iocn" src="/images/img_wx.png"></image>
+					<view class="margin_l_15">微信</view>
+        	 <image style='position: absolute;right:20px;' class="payment_iocn order_iocn1"  src="/images/img_41.png"></image>
+				</label>
+			</view>
+
+			<!--确认支付-->
+			<view class="fix_but1 row">
+				<span class="ts_12 txt_c2 mar_l_20">应付：<span class="ts_20 txt_c1">￥{{price}}</span></span>
+				<span class="wid_42 but_bac1" bindtap="pay">确认支付</span>
+			</view>
+</view>

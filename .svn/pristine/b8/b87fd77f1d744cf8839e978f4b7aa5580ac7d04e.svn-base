@@ -1,0 +1,62 @@
+<import src="../../../wxParse/wxParse.wxml"/> 
+<scroll-view class='txt_c2'>
+    <swiper indicator-dots="true" autoplay="true" class='slide-image'>
+        <block wx:for="{{imgs}}" wx:key="unique">
+            <swiper-item>
+                <image src="{{item}}" mode="aspectFill" class="slide-image" width="355" height="150" />
+            </swiper-item>
+        </block>
+    </swiper>
+    
+    <!-- 标题 -->
+    <view class='b_w ts_15 pad_25'>
+        <text >{{title}}</text>
+        <view class='back1 row ts_12'>
+            <view class='row'>
+                <image src='/images/img_38.png' class='wx_iocn1'></image>
+                <del class='ts_18'>{{price}}</del>
+                <text class='mar_l_10 txt_c1'>￥ <text class='ts_18'>{{suggest_price}}</text> <text class='txt_c2'> 起</text></text>
+            </view>
+            <text class='txt_c4 pad_r_15'>100%好评</text>
+        </view>
+        <view class='hr'></view>
+        <view class='row h_106'>
+            <image src='/images/img_39.png' class='wx_iocn2 fshr mar_r_10'></image>
+            <text class='ts_12'>此产品需二次确认，商家将在12个工作小时内（工作日9:00 - 18:00)  核实是否有位。</text>
+        </view>
+    </view>
+
+    <!-- 活动 -->
+    <view class='mar_t_10 ts_14'>
+        <view class='h_88 row b_w pad_l_25 pad_r_25'>
+            <view class='row'>
+                <text class='mar_r_10'>优惠信息</text>
+                <text class='txt1'>满减优惠</text>
+                <text class='txt2'>点评返现</text>
+            </view>
+            <image class='wx_iocn3' src='/images/img_25.png'></image>
+        </view>
+        <view class='h_88 row mar_t_1 b_w pad_l_25 pad_r_25'>
+            <view class='row'>
+                <text class='mar_r_10'>领券活动</text>
+                <text class='txt1'>满299元减10</text>
+                <text class='txt2'>满1000元减50</text>
+            </view>
+            <image class='wx_iocn3' src='/images/img_25.png'></image>
+        </view>
+    </view>
+
+    <!-- 详情 -->
+    <view class='mar_t_10 ts_14 b_w mar_b_120'>
+      <view class="wxParse">
+    <template is="wxParse" data="{{wxParseData:article.nodes}}"/>
+</view>
+    </view>
+
+    <!-- 提交订单 -->
+    <view class='row h_100 zxb_fixed widths txt_cw ts_16'>
+        <view class='row4 but_l' bindtap='dial'><image class='wx_iocn4 mar_r_20' src='/images/img_44.png'></image> <view>电话咨询</view></view>
+
+        <view class='but_r' bindtap='linkUrl' data-id="{{good_id}}">提交订单</view>
+    </view>
+</scroll-view>

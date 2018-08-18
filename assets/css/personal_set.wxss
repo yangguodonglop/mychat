@@ -1,0 +1,249 @@
+/*设置*/
+
+body {
+	background: #F7F7F7;
+}
+
+.nar_back {
+	width: 11px;
+	height: 20px;
+}
+
+.back_red h1 {
+	font-size: 1.8rem;
+	color: #000;
+}
+
+.bg_white {
+	background: #FFFFFF;
+	box-shadow: none;
+	border-bottom: #f2f2f2 1px solid;
+}
+
+.mui-bar-nav.mui-bar .mui-icon {
+	padding-top: 13px;
+	height: 16px;
+}
+
+.mui-scroll {
+	margin-top: 55px;
+}
+
+.con_item {
+	display: flex;
+	justify-content: space-between;
+	border-bottom: #f2f2f2 1px solid;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.con_tal {
+	width: 100%;
+	display: flex;
+	background: #FFFFFF;
+	padding: 0px 12px;
+	flex-direction: column;
+}
+
+.con_item_l {
+	height: 44px;
+	align-items: center;
+	line-height: 44px;
+}
+
+.con_tal .con_item:last-child {
+	border: none;
+}
+
+.con_item_r {
+	height: 45px;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img_con {
+	width: 7px;
+	height: 12px;
+}
+
+.span_text {
+	padding-right: 8px;
+}
+
+.con_active {
+	margin-top: 10px;
+}
+
+.drop_btn {
+	width: 100%;
+	padding: 0px 12px;
+	box-sizing: border-box;
+	margin-top: 25px;
+}
+
+.drop_btn .btn_text {
+	background: #ff7a03;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-image: linear-gradient(-90deg, #ff9900 0%, #ff7403 100%), linear-gradient( #666666, #666666);
+	background-blend-mode: normal, normal;
+	border-radius: 44px;
+	color: #ffffff;
+}
+
+
+/*个人信息*/
+
+.con_item_active {
+	height: 70px;
+}
+
+.con_item_active .con_item_l {
+	height: 70px;
+	line-height: 77px;
+}
+
+.con_item_active .con_item_r {
+	height: 70px;
+}
+
+.img_con_s {
+	width: 48px;
+	height: 48px;
+	margin-top: 9px;
+}
+
+
+/*绑定手机*/
+
+.input_item[type=text] {
+	border: none;
+	margin: 0;
+	padding: 0;
+	height: 44px;
+	padding-left: 27px;
+}
+
+.span_phone {
+	height: 44px;
+	width: auto;
+	line-height: 44px;
+	flex-shrink: 0;
+	color: #474747;
+}
+.con_item_login .span_phone{
+	width: 70px;
+}
+
+.con_item_phone {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.span_br {
+	width: 1px;
+	height: 30px; 
+	border-left: 1px solid #f2f2f2;
+	padding-right: 14px;
+}
+
+
+/*更换手机*/
+
+.con_tal_phone {
+	background: #f7f7f7;
+}
+
+.change_phone_img {
+	padding: 35px 0px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.change_phone_text{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_con_phone {
+	width: 79px;
+	height: 79px;
+}
+
+
+/*建议反馈*/
+
+.feedback_txt {
+	width: 100%;
+	height: 100px;
+}
+
+.con_item_feedback {
+	height: 100px;
+	width: 100%;
+}
+
+.con_item_feedback textarea {
+	margin: 0px;
+	padding: 10px 0px 0px 0px;
+	border: none;
+}
+
+.about_us_img {
+	padding: 35px 0px 10px 0px;
+}
+
+.con_tal_us {
+	margin-top: 30px;
+}
+
+.con_tal_us1 {
+	margin-top: 10px;
+}
+
+/*邀请码*/
+.my_in_code{
+	display: flex;
+	justify-content: center
+	
+}
+.my_in_code .code_num{
+	padding: 8px 11px;
+	background: #ebebeb;
+border-right:1px solid #bfbfbf;
+color: #ff7403;
+font-size: 3rem;
+}
+.my_in_code .code_num:last-child{
+	border-right:none ;
+}
+.my_code_con{
+	padding: 65px 0px 50px 0px;
+}
+.my_code_fill{
+	padding: 65px 0px 10px 0px;
+}
+.input_code[type=text]{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: none;
+	width: 30px;
+	font-size: 3rem;
+	height: 25px;
+	text-align: center;
+}
+.my_code_fill .my_in_code .code_num{
+	padding: 8px 5px;
+}
+.code_active{
+	padding-bottom: 30px;
+}
+
+

@@ -1,0 +1,3 @@
+
+@import '/pages/customer/discount/discount.wxss';
+.wx_img{width: 398rpx; height: 338rpx; margin-top: 200rpx;}

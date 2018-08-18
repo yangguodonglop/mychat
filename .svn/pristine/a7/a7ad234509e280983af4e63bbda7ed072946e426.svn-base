@@ -1,0 +1,69 @@
+<scroll-view>
+    <!--选项一-->
+    <view class="h_44 tit_bor row5 ts_14 txt_c2 b_w" style='z-index: 100;'>
+        <span class="{{actionid == 1?'tit_action':'tit_txt'}}" bindtap="but_action" data-id="1">产品推荐</span>
+        <span class="{{actionid == 2?'tit_action':'tit_txt'}}" bindtap="but_action" data-id="2">自由行</span>
+        <span class="{{actionid == 3?'tit_action':'tit_txt'}}" bindtap="but_action" data-id="3">跟团游</span>
+        <span class="{{actionid == 5?'tit_action':'tit_txt'}}" bindtap="but_action" data-id="5">周边游</span>
+        <span class="{{actionid == 4?'tit_action':'tit_txt'}}" bindtap="but_action" data-id="4">景点门票</span>
+    </view>
+    <!--选项二-->
+    <view class="h_44 tit_bor row ts_14 txt_c2 b_w pad_20" style='z-index: 100;'>
+        <view class='{{ss?"pad_l_260":"pad_l_0"}} {{sort_none?"":"txt_c1"}}' bindtap='sortlist'>
+            推荐排序
+            <image class='wx_iocn1' src='{{sort_none?"/images/img_32.png":"/images/img_33.png"}}'></image>
+        </view>
+        <image wx:if="{{ss}}" class='wx_iocn2' src='/images/img_31.png' bindtap='showSearch'></image>
+        <view wx:else class='wx_ss row'>
+            <image class='wx_iocn4' src='/images/img_02.png' bindtap='search'></image>
+            <input type='text'  placeholder='关键词搜索' bindinput='ss_input'></input>
+            <text class='dele' bindtap='showSearch'>x</text>
+        </view>
+    </view>
+    <!--弹出选项卡-->
+    <!--推荐排序-->
+    <view class='{{sort_none?"display_none":""}}'>
+        <view class="abs bac_b widths heights" style="bottom: 0;" style='z-index: 0;'></view>
+        <view class="abs widths b_w ts_12 txt_c2 zxb_anim" style="z-index: 100; height: 0px;">
+            <view class="h_44 back_white row pad_l_10 pad_r_15 tit_bor" bindtap='onsort' data-id="0">
+                <span class="{{sortid == 0?'txt_c1':''}}">综合排序</span>
+                <image class="{{sortid == 0?'image22':'image23'}}" src="/images/img_35.png" />
+            </view>
+            <view class="h_44 back_white row pad_l_10 pad_r_15 tit_bor" bindtap='onsort' data-id="1">
+                <span class="{{sortid == 1?'txt_c1':''}}">新品推荐</span>
+                <image class="{{sortid == 1?'image22':'image23'}}" src="/images/img_35.png" />
+            </view>
+            <view class="h_44 back_white row pad_l_10 pad_r_15 tit_bor" bindtap='onsort' data-id="2">
+                <span class="{{sortid == 2?'txt_c1':''}}">价格从低到高</span>
+                <image class="{{sortid == 2?'image22':'image23'}}" src="/images/img_35.png" />
+            </view>
+            <view class="h_44 back_white row pad_l_10 pad_r_15 tit_bor" bindtap='onsort' data-id="3">
+                <span class="{{sortid == 3?'txt_c1':''}}">价格从高到低</span>
+                <image class="{{sortid == 3?'image22':'image23'}}" src="/images/img_35.png" />
+            </view>
+        </view>
+    </view>
+    <!--列表-->
+    <!--下拉刷新容器-->
+    <view>
+        <view class="ts_14" wx:for="{{datalist}}" wx:key="unique">
+            <view class="h_105 tit_bor row pad_t_5 pad_b_5">
+                <view class="fshr mar_l_13" style="overflow: hidden;">
+                    <image class="wx_iocn3" src="{{item.thumb}}" />
+                </view>
+                <view class="col4 mar_l_13 pad_r_10">
+                    <span class="h_38 txt_c7" style="overflow: hidden;">{{item.title_top}}{{item.title}}</span>
+                    <view class="row3 ts_10 mar_b_-10">
+                        <span class="iocn6">优惠</span>
+                        <span class="iocn7">推荐</span>
+                    </view>
+                    <view class="row ts_12">
+                        <span class="txt_c4">{{item.start}}</span>
+                        <span class="txt_c1 ts_11">￥
+                            <span class="ts_18">{{item.price}}</span> 起</span>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</scroll-view>

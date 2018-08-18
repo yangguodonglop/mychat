@@ -1,0 +1,112 @@
+<!--搜索-->
+		<view class="h_50 b_w row ts_15 br1">
+			<view class="mar_l_20 txt_c1">武汉 <image class="img1 mar_l_5" src="/images/img_01.png" alt=""/></view>
+			<view class="tit_back1 txt_c4"><image class="img2 mar_r_5" src="/images/img_02.png" alt="" /> 搜索你想去的地方</view>
+		</view>
+
+		<view class="mui-content mui-row mui-fullscreen mar_t_50">
+			<view class="mui-col-xs-3">
+				<ul class="mui-segmented-control mui-segmented-control-inverted mui-segmented-control-vertical">
+					<li class="l_item_action">当季热门</li>
+					<li class="l_item">国内</li>
+					<li class="l_item">周边</li>
+					<li class="l_item">东南亚</li>
+				</ul>
+			</view>
+			<view class="mui-col-xs-9">
+				<image class="widths brad_5" src="imgs/img_101.jpg"/>
+				<view class="row_wrap mar_t_5">
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+				</view>
+				<image class="widths brad_5" src="imgs/img_101.jpg"/>
+				<view class="row_wrap mar_t_5">
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+				</view>
+				<image class="widths brad_5" src="imgs/img_101.jpg"/>
+				<view class="row_wrap mar_t_5">
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+				</view>
+				<image class="widths brad_5" src="imgs/img_101.jpg"/>
+				<view class="row_wrap mar_t_5">
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden"> 
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><span>TAIGUO</span></view>
+						<image class="heights" src="imgs/img_103.jpg"/>
+					</view>
+					<view class="rel wid_48 mar_b_10" style="height: 90px; overflow: hidden">
+						<view class="bac_zz widths heights abs"></view>
+						<view class="txt_cw abs col1"><view>泰国</view><view class="">TAIGUO</view></view>
+						<image class="heights" src="imgs/img_103.JPG"/>
+					</view>
+				</view>
+				
+				
+			</view>
+		</view>

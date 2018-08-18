@@ -1,0 +1,7 @@
+.wx_img1{width: 750rpx; height: 562rpx;}
+.back{height: 100vh; background-color: #febd1b;}
+.ts_10{font-size: 20rpx; color: #67181c; width: 540rpx; height: 580rpx; background-color: #ffc935; border-radius: 5rpx; margin-left: 105rpx; padding-bottom: 10rpx;}
+.point{width: 10rpx; height: 10rpx; border-radius: 50%; background-color: #5c0c14; margin-left: 46rpx; margin-right: 15rpx;}
+.wx_img_back{width: 260rpx; height: 260rpx; background-color: white;}
+.w_460{width: 460rpx; background-color: white; height: 46rpx; padding-left: 12rpx; padding-right: 12rpx; margin-top: -20rpx;}
+.but{width: 90rpx; height: 28rpx; color: white; text-align: center; font-size: 18rpx; background-color: #fc1206;}

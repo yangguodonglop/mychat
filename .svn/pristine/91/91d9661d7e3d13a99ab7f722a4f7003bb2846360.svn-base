@@ -1,0 +1,93 @@
+<!--背景图片-->
+<view class="back_red h_120 abs widths" style="top: 0; z-index: -100;">
+
+    <view bindtap="setting" wx:if="{{status}}" style="float: right;margin-right: 18px; margin-top: 18px;">
+        <image src="/images/img_62.png" style="width: 19px;height: 19px;" />
+    </view>
+
+    <image class="widths abs" style="bottom: 0;" src="/images/banner_zz1.png" mode="widthFix" />
+</view>
+<view class="b_w h_120 abs widths" style="top: 120px; z-index: -100;"></view>
+
+<view class="h_155 mar_t_50 mar_l_18 mar_r_18 txt_bac_red1 rel" style="box-shadow: 1px 2px 10px #E1e1e1">
+    <image class="widths abs" src="/images/me_back.png" mode="widthFix" />
+    <image id="user_img" class="img26 abs" style="margin-top: -25px; left: 50%; margin-left: -25px;" src="{{avatar_url}}" mode="widthFix" />
+    <view class="col widths h_120 abs" style="bottom: 0;">
+        <text wx:if="{{status}}" id="users" class="ts_15">{{username}}</text>
+        <text bindtap="login" wx:elif="{{status == false}}" id="users" class="ts_15">登录/注册</text>
+
+        <image id="user_dj" class="w_71 margin_t_3" src="/images/img_79.png" mode="widthFix" />
+        <text id="sign" class="ts_10 txt_c3 mar_b_5 pad_l_15 pad_r_15" style="line-height: 15px;">{{sign}}</text>
+        <view class="h_72 row widths ts_14">
+            <text class="w_49 heights row4">
+                <image class="iocn1" src="../../../images/jifen.png" />积分
+                <text id="integ" class="txt_c1 mar_l_20">{{integral}}</text>
+            </text>
+            <text class="s_br"></text>
+            <text class="w_49 heights row4">
+                <image class="iocn1" src="../../../images/yaoqing.png" />邀请
+                <text class="txt_c1 mar_l_20">{{invite_num}}</text>
+            </text>
+        </view>
+    </view>
+</view>
+
+<!--我的订单-->
+<view class="b_w pad_18">
+    <text class="ts_12 txt_c8">我的订单</text>
+    <view class="row mar_t_10" style="height:60px;">
+        <view class="col1" bindtap='orderList' data-type='0'>
+            <image class="wx_iocn2" src="/images/d1.png" />
+            <text class="txt_c2 ts_12 mar_t_8">全部订单</text>
+        </view>
+        <view class="col1" bindtap='orderList' data-type='1'>
+            <image class="wx_iocn2" src="/images/d2.png" />
+            <text class="txt_c2 ts_12 mar_t_8">待付款</text>
+        </view>
+        <view class="col1" bindtap='orderList' data-type='2'>
+            <image class="wx_iocn2" src="/images/d4.png" />
+            <text class="txt_c2 ts_12 mar_t_8">进行中</text>
+        </view>
+        <view class="col1" bindtap='orderList' data-type='3'>
+            <image class="wx_iocn2" src="/images/d2.png" />
+            <text class="txt_c2 ts_12 mar_t_8">已完成</text>
+        </view>
+    </view>
+    <view class="br4 mar_t_18 mar_b_18"></view>
+
+    <text class="ts_12 txt_c8">常用功能</text>
+    <view class="row_wrap">
+        <view class="col wid_25 mar_t_20" bindtap='open_page' data-urls="../invite/invite">
+            <image class="wx_iocn3" src="../../../images/img_96.png" />
+            <text class="txt_c2 ts_12 mar_t_8">邀请好友</text>
+        </view>
+        <view class="col wid_25 mar_t_20" bindtap='open_page' data-urls="../discount/discount">
+            <image class="wx_iocn3" src="../../../images/img_98.png" />
+            <text class="txt_c2 ts_12 mar_t_8">优惠券</text>
+        </view>
+        <view bindtap='integral' class="col wid_25 mar_t_20">
+            <image class="wx_iocn3" src="../../../images/img_95.png" />
+            <text class="txt_c2 ts_12 mar_t_8">积分商城</text>
+        </view>
+        <view bindtap='setAddress' class="col wid_25 mar_t_20">
+            <image class="wx_iocn3" src="../../../images/img_97.png" />
+            <text class="txt_c2 ts_12 mar_t_8">地址管理</text>
+        </view>
+        <view class="col wid_25 mar_t_20" bindtap='open_page' data-urls="../telephone/telephone">
+            <image class="wx_iocn5" src="../../../images/l6.png" />
+            <text class="txt_c3 ts_12 mar_t_8">添加联系人</text>
+        </view>
+        <view class="col wid_25 mar_t_20" bindtap='dial'>
+            <image class="wx_iocn5" src="/images/img_93.png" />
+            <text class="txt_c3 ts_12 mar_t_8">联系客服</text>
+        </view>
+        <view class="col wid_25 mar_t_20" bindtap='open_page' data-urls="../feedback/feedback">
+            <image class="wx_iocn5" src="/images/img_92.png" />
+            <text class="txt_c3 ts_12 mar_t_8">建议反馈</text>
+        </view>
+        <view class="col wid_25 mar_t_20" bindtap='open_page' data-urls="../about/about">
+            <image class="wx_iocn5" src="../../../images/img_91.png" />
+            <text class="txt_c3 ts_12 mar_t_8">关于我们</text>
+        </view>
+    </view>
+</view>

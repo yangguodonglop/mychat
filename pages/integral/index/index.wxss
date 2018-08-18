@@ -1,0 +1,19 @@
+/* integral/index.wxss */
+scroll-view{background-color: #f2f3f4}
+.wx_iocn1{width: 750rpx; height: 260rpx;}
+.wx_iocn2{width: 30rpx; height: 30rpx; margin-right: 10rpx; margin-bottom: -5rpx;}
+.wx_iocn3{width: 550rpx; height: 142rpx;}
+.wx_iocn4{width: 150rpx; height: 150rpx;}
+
+.h_44{height: 88rpx; margin-top: -8rpx;}
+.reds{background-color: rebeccapurple}
+.mar_10{margin: 20rpx;}
+.wid_49{text-align: center}
+.bord_l{border-left: 1px solid #f2f2f2;}
+.w_150{width: 200rpx;}
+.item_active{height: 30rpx; text-align: center; padding-left: 5rpx; margin-top: 32rpx; margin-bottom: 40rpx; border-left: 6rpx solid #fd9744;}
+.item{height: 108rpx; text-align: center; padding-left: 5rpx; background-color: #f9f9f9; line-height: 108rpx; border-top: 2rpx solid #f2f2f2;}
+.one_lin{width: 200rpx;}
+
+.back1{width: 800rpx; height: 750rpx; background-color: red;}
+.back2{width: 800rpx; height: 750rpx; background-color: rebeccapurple;}
